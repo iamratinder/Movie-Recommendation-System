@@ -49,34 +49,37 @@ selected_movie_name = st.selectbox(
 
 
 if st.button("Recommend", use_container_width=True, key="green"):
-    names,posters = recommend(selected_movie_name)
+    if selected_movie_name:
+        names,posters = recommend(selected_movie_name)
+        col1, col2, col3, col4 = st.columns(4)
+        col5, col6, col7, col8 = st.columns(4)
+        st.subheader("Recommendations :")
+        col9, col10, col11, col12 = st.columns(4)
 
-    col1, col2, col3, col4 = st.columns(4)
-    col5, col6, col7, col8 = st.columns(4)
-    col9, col10, col11, col12 = st.columns(4)
-
-    for i in range(3):
+        for i in range(3):
+            col1, col2, col3, col4, col5 = st.columns([2,0.5,2,0.5,2])
+            with col1:
+                st.image(posters[i])
+                st.text(names[i])
+            with col3:
+                st.image(posters[i+1])
+                st.text(names[i+1])
+            with col5:
+                st.image(posters[i+2])
+                st.text(names[i+2])
+            
+            col1 = st.columns(1)
+        
         col1, col2, col3, col4, col5 = st.columns([2,0.5,2,0.5,2])
         with col1:
-            st.image(posters[i])
-            st.text(names[i])
-        with col3:
-            st.image(posters[i+1])
-            st.text(names[i+1])
-        with col5:
-            st.image(posters[i+2])
-            st.text(names[i+2])
-        
-        col1 = st.columns(1)
-    
-    col1, col2, col3, col4, col5 = st.columns([2,0.5,2,0.5,2])
-    with col1:
-            st.image(posters[9])
-            st.text(names[9])
+                st.image(posters[9])
+                st.text(names[9])
 
-    col1, col2, col3 = st.columns([1, 1, 1])
-    with col3:
-        st.button("Clear Recommendations")
+        col1, col2, col3 = st.columns([1, 1, 1])
+        with col3:
+            st.button("Clear Recommendations")
+    else:
+        st.warning("Please select a movie before proceeding!")
         
 else:
     st.write("")

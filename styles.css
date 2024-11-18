@@ -5,6 +5,42 @@
     color: white;
 }
 
+.button:visited{
+    background-color: red;
+}
+
+h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 3.75rem;
+    padding: 1.25rem 0px 1rem;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.st-emotion-cache-bm2z3a{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/001/227/430/small/empty-theater-or-cinema-stage.jpg');
+    background-size: cover;
+}
+
+.st-ch{
+    color: black;
+}
+
+.st-bl{
+    background-color: white;
+}
+
+.st-ci:hover{
+    cursor: pointer;
+}
+
+.st-ci{
+    background-color: black;
+    padding: 7px
+}
+
 .stApp {
     background: linear-gradient(to bottom, #0f0f0f, #2d2c2b); /* Gradient colors */
     background-size: cover;
