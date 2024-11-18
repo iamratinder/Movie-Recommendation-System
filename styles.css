@@ -57,3 +57,43 @@ h1 {
     border-color: black;
     color: black;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .st-key-green button {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button text size */
+    }
+
+    .st-emotion-cache-bm2z3a {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .st-ci {
+        padding: 5px; /* Reduce padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Further reduce font size */
+        padding: 1rem 0; /* Adjust padding */
+    }
+
+    .st-key-green button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .stApp {
+        background: linear-gradient(to bottom, #1f1f1f, #3d3c3b); /* Subtle gradient change for smaller screens */
+    }
+
+    .st-ci {
+        padding: 3px;
+    }
+}
