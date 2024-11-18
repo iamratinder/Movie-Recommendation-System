@@ -56,7 +56,7 @@ if st.button("Recommend", use_container_width=True, key="green"):
         st.subheader("Recommendations :")
         col9, col10, col11, col12 = st.columns(4)
 
-        for i in range(3):
+        for i in range(0,9,3):
             col1, col2, col3, col4, col5 = st.columns([2,0.5,2,0.5,2])
             with col1:
                 st.image(posters[i])
