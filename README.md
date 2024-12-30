@@ -22,7 +22,7 @@ Built in Python using :
  Deployed on : Streamlit
 ## 🌐 Checkout the Application :
 
-Link : [https://iamratinder-movie-recommendation-system-main-9yzoss.streamlit.app/](https://iamratinder-movie-recommendation-system-main-9yzoss.streamlit.app/)
+Link : [https://recommender-bzsjmlgxiomqunuemrqyby.streamlit.app/](https://recommender-bzsjmlgxiomqunuemrqyby.streamlit.app/)
 
 
 
